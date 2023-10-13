@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="background" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1000.0" style="-fx-background-color: linear-gradient(to left, #3c186c, #34a8e7);" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pack.project_2.SignUpPage">
+    <children>
+        <BorderPane layoutX="200.0" layoutY="100.0" prefHeight="500.0" prefWidth="600.0">
+            <top>
+                <Text fx:id="welcomeText" fill="WHITE" lineSpacing="2.0" strokeType="OUTSIDE" strokeWidth="0.0" text="TECH DAILY" textAlignment="CENTER" wrappingWidth="562.9193572998047" BorderPane.alignment="CENTER">
+                    <font>
+                        <Font name="KoHo Regular" size="58.0" />
+                    </font>
+                </Text>
+            </top>
+            <center>
+                <Pane layoutX="100.0" prefHeight="100.0" prefWidth="100.0" BorderPane.alignment="CENTER">
+                    <children>
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" blendMode="COLOR_BURN" cache="true" height="372.0" layoutX="158.0" layoutY="29.0" opacity="0.1" stroke="TRANSPARENT" strokeLineCap="ROUND" strokeLineJoin="BEVEL" strokeMiterLimit="30.0" strokeType="OUTSIDE" width="308.0" />
+                        <PasswordField fx:id="passwordField" layoutX="210.0" layoutY="230.0" prefHeight="40.0" prefWidth="200.0" promptText="password" style="-fx-background-color: 0,0; -fx-border-color: #808080; -fx-border-radius: 30;">
+                            <font>
+                                <Font size="16.0" />
+                            </font>
+                        </PasswordField>
+                        <Text fx:id="signUpText" fill="WHITE" layoutX="270.0" layoutY="87.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sign Up">
+                            <font>
+                                <Font name="KoHo Regular" size="30.0" />
+                            </font>
+                        </Text>
+                        <TextField fx:id="nameField" layoutX="210.0" layoutY="130.0" prefHeight="40.0" prefWidth="200.0" promptText="name" style="-fx-border-color: #808080; -fx-border-radius: 30; -fx-background-color: 0;">
+                            <opaqueInsets>
+                                <Insets />
+                            </opaqueInsets>
+                            <font>
+                                <Font size="16.0" />
+                            </font>
+                        </TextField>
+                        <Button fx:id="signupButton" layoutX="272.0" layoutY="340.0" mnemonicParsing="false" onAction="#signUp" prefHeight="30.0" prefWidth="80.0" style="-fx-background-radius: 25; -fx-background-color: #FFFFFF; -fx-border-color: 0;" text="Sign up" textAlignment="CENTER">
+                            <font>
+                                <Font name="KoHo Regular" size="16.0" />
+                            </font>
+                        </Button>
+                  <TextField fx:id="signUpUsername" layoutX="210.0" layoutY="180.0" prefHeight="40.0" prefWidth="200.0" promptText="username" style="-fx-border-color: #808080; -fx-border-radius: 30; -fx-background-color: 0;">
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </TextField>
+                  <RadioButton fx:id="maleButton" layoutX="180.0" layoutY="300.0" mnemonicParsing="false" text="Male" textFill="WHITE" />
+                  <RadioButton fx:id="femaleButton" layoutX="245.0" layoutY="300.0" mnemonicParsing="false" text="Female" textFill="WHITE" />
+                  <RadioButton fx:id="nbButton" layoutX="315.0" layoutY="300.0" mnemonicParsing="false" text="Non-binary gender" textFill="WHITE" />
+                    </children>
+                </Pane>
+            </center>
+        </BorderPane>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" blendMode="COLOR_BURN" cache="true" height="300.0" layoutX="18.0" layoutY="203.0" opacity="0.1" stroke="TRANSPARENT" strokeLineCap="ROUND" strokeLineJoin="BEVEL" strokeMiterLimit="30.0" strokeType="OUTSIDE" width="311.0" />
+      <Text fill="WHITE" layoutX="50.0" layoutY="240.0" strokeType="OUTSIDE" strokeWidth="0.0" text="To create an account: ">
+         <font>
+            <Font name="KoHo Regular" size="18.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="60.0" layoutY="275.0" strokeType="OUTSIDE" strokeWidth="0.0" text="1. Enter your name" />
+      <Text fill="WHITE" layoutX="60.0" layoutY="295.0" strokeType="OUTSIDE" strokeWidth="0.0" text="2. Choose yourself a username" />
+      <Text fill="WHITE" layoutX="60.0" layoutY="315.0" strokeType="OUTSIDE" strokeWidth="0.0" text="3.  Set a password for your account" />
+      <Text fill="WHITE" layoutX="70.0" layoutY="340.0" strokeType="OUTSIDE" strokeWidth="0.0" text="All the fields above have to be smaller than 9 characters. Password have to contain at least 1 digit in it and be distinct from username and name." wrappingWidth="183.92892456054688" />
+      <Text fill="WHITE" layoutX="60.0" layoutY="435.0" strokeType="OUTSIDE" strokeWidth="0.0" text="4. Set your gender" />
+      <Text fill="WHITE" layoutX="60.0" layoutY="455.0" strokeType="OUTSIDE" strokeWidth="0.0" text="5.  Press &quot;sign up&quot; button and log in with these data" wrappingWidth="182.81076572184395" />
+    </children>
+</AnchorPane>

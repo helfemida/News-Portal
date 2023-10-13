@@ -1,0 +1,9 @@
+username:alaska
+name:Alaska
+gender:female
+password:alaskas8
+
+username:alaxx
+name:Albina
+gender:female
+password:als3

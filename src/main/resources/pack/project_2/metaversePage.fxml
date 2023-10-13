@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.FlowPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="background" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1000.0" style="-fx-background-color: #0f2374;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pack.project_2.MetaversePage">
+    <children>
+        <Text fx:id="welcomeText" fill="WHITE" layoutX="35.0" layoutY="50.0" lineSpacing="2.0" strokeType="OUTSIDE" strokeWidth="0.0" text="TECH DAILY" wrappingWidth="244.4479217529297">
+            <font>
+                <Font name="KoHo Regular" size="36.0" />
+            </font>
+        </Text>
+        <Rectangle arcHeight="5.0" arcWidth="5.0" blendMode="COLOR_BURN" cache="true" height="80.0" opacity="0.1" stroke="TRANSPARENT" strokeLineCap="ROUND" strokeLineJoin="BEVEL" strokeMiterLimit="30.0" strokeType="OUTSIDE" width="1000.0" />
+        <FlowPane layoutX="110.0" layoutY="135.0" prefHeight="550.0" prefWidth="250.0" vgap="40.0">
+            <children>
+                <ImageView fx:id="metaverse1" fitHeight="150.0" fitWidth="250.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../../../java/pack/project_2/sources/mv1.jpg" />
+                    </image>
+                </ImageView>
+                <ImageView fx:id="metaverse2" fitWidth="250.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../../../java/pack/project_2/sources/mv2.jpg" />
+                    </image>
+                </ImageView>
+                <ImageView fx:id="metaverse3" fitWidth="250.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../../../java/pack/project_2/sources/mv3.png" />
+                    </image>
+                </ImageView>
+            </children>
+        </FlowPane>
+        <Text fill="WHITE" layoutX="410.0" layoutY="185.0" strokeType="OUTSIDE" strokeWidth="0.0" text="With consumers losing interest in the metaverse, what is the future of metaverse fashion? It’s a bright one and much needed, say its advocates." wrappingWidth="505.3382568359375">
+            <font>
+                <Font size="14.0" />
+            </font>
+        </Text>
+        <Text fill="WHITE" layoutX="410.0" layoutY="371.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Some experts think influencers like Techman Ju, TigressX and Thrill could be the key to boosting the metaverse's profile.VR film director Alex Ruhl - head of metaverse technologies at PwC - says it's &quot;more immersive, intimate and interactive than just posting videos or live streaming&quot;." wrappingWidth="505.3382568359375">
+            <font>
+                <Font size="14.0" />
+            </font>
+        </Text>
+        <Text fill="WHITE" layoutX="410.0" layoutY="580.0" strokeType="OUTSIDE" strokeWidth="0.0" text="With the help of the Metaverse Fund, South Korea will support the mergers and acquisitions of various firms from the metaverse ecosystem.With the help of the Metaverse Fund, South Korea will support the mergers and acquisitions of various firms from the metaverse ecosystem." wrappingWidth="505.3382568359375">
+            <font>
+                <Font size="14.0" />
+            </font>
+        </Text>
+      <FlowPane hgap="35.0" layoutX="270.0" layoutY="25.0" prefHeight="50.0" prefWidth="770.0">
+         <children>
+            <Button fx:id="roboticsButton" mnemonicParsing="false" onAction="#setRoboticsButton" prefHeight="31.0" prefWidth="99.0" style="-fx-background-color: 0; -fx-border-color: #426cbc; -fx-border-radius: 30; -fx-border-width: 1;" text="robotics" textFill="WHITE">
+               <font>
+                  <Font name="KoHo Regular" size="14.0" />
+               </font>
+            </Button>
+            <Button fx:id="aiButton" mnemonicParsing="false" onAction="#setAiButton" prefHeight="31.0" prefWidth="99.0" style="-fx-background-color: 0; -fx-border-color: #426cbc; -fx-border-radius: 30; -fx-border-width: 1;" text="ai" textFill="WHITE">
+               <font>
+                  <Font name="KoHo Regular" size="14.0" />
+               </font>
+            </Button>
+            <Button fx:id="metaverseButton" mnemonicParsing="false" prefHeight="31.0" prefWidth="99.0" style="-fx-background-color: 0; -fx-border-color: linear-gradient(to left, #3b67c6, #d9b6e0); -fx-border-radius: 30; -fx-border-width: 2;" text="metaverse" textFill="WHITE">
+               <font>
+                  <Font name="KoHo Regular" size="14.0" />
+               </font>
+            </Button>
+            <Button fx:id="spaceButton" mnemonicParsing="false" onAction="#setSpaceButton" prefHeight="31.0" prefWidth="99.0" style="-fx-background-color: 0; -fx-border-color: #426cbc; -fx-border-radius: 30; -fx-border-width: 1;" text="space" textFill="WHITE">
+               <font>
+                  <Font name="KoHo Regular" size="14.0" />
+               </font>
+            </Button>
+            <Button fx:id="contactButton" mnemonicParsing="false" onAction="#setContact" prefHeight="31.0" prefWidth="99.0" style="-fx-background-color: 0; -fx-border-color: #426cbc; -fx-border-radius: 30; -fx-border-width: 1;" text="contact" textFill="WHITE">
+               <font>
+                  <Font name="KoHo Regular" size="14.0" />
+               </font>
+            </Button>
+            <Button fx:id="exitButton" layoutX="546.0" layoutY="11.0" mnemonicParsing="false" onAction="#setExitButton" prefHeight="31.0" prefWidth="48.0" style="-fx-background-color: 0; -fx-border-color: #426cbc; -fx-border-radius: 30; -fx-border-width: 1;" text="exit" textFill="WHITE">
+               <font>
+                  <Font name="KoHo Regular" size="14.0" />
+               </font>
+            </Button>
+         </children>
+      </FlowPane>
+      <Hyperlink fx:id="mv1Link" layoutX="405.0" layoutY="130.0" onAction="#setMv1Heading" text="Metaverse Fashion: The Wave of the Digital Future?" textFill="WHITE">
+         <font>
+            <Font name="KoHo Regular" size="20.0" />
+         </font>
+      </Hyperlink>
+      <Hyperlink fx:id="mv2Link" layoutX="405.0" layoutY="310.0" onAction="#setMv2Heading" text="Can VR influencers save the metaverse?" textFill="WHITE">
+         <font>
+            <Font name="KoHo Regular" size="20.0" />
+         </font>
+      </Hyperlink>
+      <Hyperlink fx:id="mv3Link" layoutX="405.0" layoutY="520.0" onAction="#setMv3Heading" prefHeight="37.0" prefWidth="525.0" text="South Korea launches ‘Metaverse Fund’ to expedite domestic initiatives" textFill="WHITE">
+         <font>
+            <Font name="KoHo Regular" size="20.0" />
+         </font>
+      </Hyperlink>
+    </children>
+</AnchorPane>

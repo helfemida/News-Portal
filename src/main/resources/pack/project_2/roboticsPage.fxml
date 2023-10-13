@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.FlowPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="background" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1000.0" style="-fx-background-color: #0f2374;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pack.project_2.RoboticsPage">
+    <children>
+        <Text fx:id="welcomeText" fill="WHITE" layoutX="35.0" layoutY="50.0" lineSpacing="2.0" strokeType="OUTSIDE" strokeWidth="0.0" text="TECH DAILY" wrappingWidth="244.4479217529297">
+            <font>
+                <Font name="KoHo Regular" size="36.0" />
+            </font>
+        </Text>
+        <Rectangle arcHeight="5.0" arcWidth="5.0" blendMode="COLOR_BURN" cache="true" height="80.0" opacity="0.1" stroke="TRANSPARENT" strokeLineCap="ROUND" strokeLineJoin="BEVEL" strokeMiterLimit="30.0" strokeType="OUTSIDE" width="1000.0" />
+        <FlowPane layoutX="110.0" layoutY="135.0" prefHeight="550.0" prefWidth="250.0" vgap="40.0">
+            <children>
+                <ImageView fx:id="robo1" fitHeight="150.0" fitWidth="250.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../../../java/pack/project_2/sources/Robo1.jpg" />
+                    </image>
+                </ImageView>
+                <ImageView fx:id="robo2" fitHeight="150.0" fitWidth="250.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../../../java/pack/project_2/sources/robo2.jpg" />
+                    </image>
+                </ImageView>
+                <ImageView fx:id="robo3" fitHeight="150.0" fitWidth="250.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../../../java/pack/project_2/sources/robo3.jpg" />
+                    </image>
+                </ImageView>
+            </children>
+        </FlowPane>
+        <Text fill="WHITE" layoutX="410.0" layoutY="185.0" strokeType="OUTSIDE" strokeWidth="0.0" text="German robotics and automation experts expect the industry’s gross revenue to grow by 9%, reaching 15.7 billion euros (over $17 billion) by the end of 2023, according to the VDMA Robotics + Automation Association..." wrappingWidth="505.3382568359375">
+            <font>
+                <Font size="14.0" />
+            </font>
+        </Text>
+        <Text fill="WHITE" layoutX="410.0" layoutY="360.0" strokeType="OUTSIDE" strokeWidth="0.0" text="For all the hand-wringing over whether robots will replace human workers, ChatGPT and its ilk — tools known as generative AI — are shaping up to be a big employment threat too..." wrappingWidth="505.3382568359375">
+            <font>
+                <Font size="14.0" />
+            </font>
+        </Text>
+        <Text fill="WHITE" layoutX="410.0" layoutY="546.0" strokeType="OUTSIDE" strokeWidth="0.0" text="In recent years, interest in using robots in education has seen massive growth. Projects that involve robotics, artificial intelligence, speech recognition, and related technologies can help develop students’ analytical, creative, and practical skills. However, a major challenge has been the robots themselves..." wrappingWidth="505.3382568359375">
+            <font>
+                <Font size="14.0" />
+            </font>
+        </Text>
+      <FlowPane hgap="35.0" layoutX="270.0" layoutY="25.0" prefHeight="50.0" prefWidth="770.0">
+         <children>
+            <Button mnemonicParsing="false" prefHeight="31.0" prefWidth="99.0" style="-fx-background-color: 0; -fx-border-color: linear-gradient(to left, #3b67c6, #d9b6e0); -fx-border-radius: 30; -fx-border-width: 2;" text="robotics" textFill="WHITE">
+               <font>
+                  <Font name="KoHo Regular" size="14.0" />
+               </font>
+            </Button>
+            <Button fx:id="aiButton" mnemonicParsing="false" onAction="#aiButton" prefHeight="31.0" prefWidth="99.0" style="-fx-background-color: 0; -fx-border-color: #426cbc; -fx-border-radius: 30; -fx-border-width: 1;" text="ai" textFill="WHITE">
+               <font>
+                  <Font name="KoHo Regular" size="14.0" />
+               </font>
+            </Button>
+            <Button fx:id="metaverseButton" mnemonicParsing="false" onAction="#setMetaverseButton" prefHeight="31.0" prefWidth="99.0" style="-fx-background-color: 0; -fx-border-color: #426cbc; -fx-border-radius: 30; -fx-border-width: 1;" text="metaverse" textFill="WHITE">
+               <font>
+                  <Font name="KoHo Regular" size="14.0" />
+               </font>
+            </Button>
+            <Button fx:id="spaceButton" mnemonicParsing="false" onAction="#setSpaceButton" prefHeight="31.0" prefWidth="99.0" style="-fx-background-color: 0; -fx-border-color: #426cbc; -fx-border-radius: 30; -fx-border-width: 1;" text="space" textFill="WHITE">
+               <font>
+                  <Font name="KoHo Regular" size="14.0" />
+               </font>
+            </Button>
+            <Button fx:id="contactButton" mnemonicParsing="false" onAction="#setContacts" prefHeight="31.0" prefWidth="99.0" style="-fx-background-color: 0; -fx-border-color: #426cbc; -fx-border-radius: 30; -fx-border-width: 1;" text="contact" textFill="WHITE">
+               <font>
+                  <Font name="KoHo Regular" size="14.0" />
+               </font>
+            </Button>
+            <Button fx:id="exitButton" layoutX="546.0" layoutY="11.0" mnemonicParsing="false" onAction="#setExitButton" prefHeight="31.0" prefWidth="48.0" style="-fx-background-color: 0; -fx-border-color: #426cbc; -fx-border-radius: 30; -fx-border-width: 1;" text="exit" textFill="WHITE">
+               <font>
+                  <Font name="KoHo Regular" size="14.0" />
+               </font>
+            </Button>
+         </children>
+      </FlowPane>
+      <Hyperlink fx:id="robotics1link" layoutX="405.0" layoutY="130.0" onAction="#setRobo1HeadingAction" text="German robotics industry to grow 9% in 2023" textFill="WHITE">
+         <font>
+            <Font name="KoHo Regular" size="20.0" />
+         </font>
+      </Hyperlink>
+      <Hyperlink fx:id="robotics2Link" layoutX="405.0" layoutY="300.0" onAction="#setRobo2HeadingAction" text="AI and robots fuel new job displacement fears" textFill="WHITE">
+         <font>
+            <Font name="KoHo Regular" size="20.0" />
+         </font>
+      </Hyperlink>
+      <Hyperlink fx:id="robo2Link" layoutX="405.0" layoutY="490.0" onAction="#setRobo3HeadingAction" prefHeight="37.0" prefWidth="556.0" text="Elephant Robotics Unveils New Desktop Educational Robots for 2023" textFill="WHITE">
+         <font>
+            <Font name="KoHo Regular" size="20.0" />
+         </font>
+      </Hyperlink>
+    </children>
+</AnchorPane>
